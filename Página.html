@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_ Criando botão</title>
+<link rel="shortcut icon" href="img/Javascript.256.png" type="image/x-icon">
+<style>
+    img{
+        margin: 50px;
+        
+    }
+    h1{
+        margin: 50px;
+    }
+    h2{
+        color: #0080c0;
+        font-size: 40px;
+        margin: 15px;
+        text-shadow: -1px 2px 3px #000;
+    }
+    figcaption{
+      margin: 1%;
+      font-size: 30px;
+    }
+    button{
+        font-size: 30px;
+        border: 3px solid;
+        border-radius: 10px 10px 10px;
+        box-shadow: 2px 3px 4px ;
+        margin: 30px;
+    }
+</style>
+<script src="app.js"></script>
+</head>
+<figure>
+    <img src="img/Javascript.256.png" width="200" alt="">
+    <figcaption><h2>Javascript.Botão javascript</h2></figcaption>
+</figure>
+  <h1>Criando um Botão Com JavaScript.</h1>
+
+  <!--Adicione um botão HTML com um ID-->
+  <button id="meuBotão">click qui</button>
+
+
+<!--Crie uma div para exibir  o resultdo da ação do botão-->
+  <div id="resultado"></div>
+
+
+   <!-- Inclua um script JavaScript -->
+  <script>
+    // Obtenha o botão pelo ID
+    var botão = document.getElementById("meuBotão");
+
+    // Adicione um ouvinte de evento para o botão (quando clicado)
+    botão.addEventListener("click",function(){
+
+        // Coloque a funcionalidade que você deseja que o botão execute aqui
+        document.getElementById("resultado").innerHTML = "<h2>O botão está funcionando</h2>";
+    })
+  </script>
+</body>
+</html>
