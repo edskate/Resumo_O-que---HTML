@@ -15,12 +15,57 @@
             margin: 30px;
             text-shadow: -1px 2px 3px ;
         }
+        button{
+            background-color: #80ff00;
+            font-size: 15px;
+            border: 2px solid;
+            margin: 15px;
+            border-radius: 10px 10px 10px ;
+        }
+        p{
+        font-size: 25px;
+        color: wheat;
+        margin: 15px;
+        text-shadow: -2px 3px 4px #000;
+        }
+        em{
+            color: white;
+        margin: 40px;
+        }
     </style>
 
 </head>
 <body>
     <h1>Criando um botão 2 em JavaScript.</h1>
 
+    <!-- Botão de clique -->
+    <button id="botaoClique">Clique em mim</button>
 
+    <!-- Elemento para exibir o contador de cliques -->
+    <p>Você clicou no botão <span id="contador">0</span> vezes.</p>
+    <p><em>👆Click no Botão Verde.</em></p>
+    <br>
+    <p><em>🧑👉Depois atualize o navegador .</em></p>
+
+    <!-- Inclua um script JavaScript -->
+    <script>
+        // Obtém o botão pelo ID
+        var botao = document.getElementById("botaoClique");
+
+        // Obtém o elemento do contador pelo ID
+        var contadorElemento = document.getElementById("contador");
+
+        // Inicializa o contador
+        var contadorCliques = 0;
+
+        // Adiciona um ouvinte de evento para o clique no botão
+        botao.addEventListener("click", function() {
+            // Incrementa o contador de cliques
+            contadorCliques++;
+
+            // Atualiza o texto do elemento do contador
+            contadorElemento.textContent = contadorCliques;
+        });
+    </script>
 </body>
 </html>
